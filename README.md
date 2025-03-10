@@ -1,14 +1,13 @@
 <br />
 
-![](/.github/assets/presentation.png)
+![](/.github/assets/reptigramLogo.png)
 
 <p align="center">
-  Twitter clone built in Next.js + TypeScript + Tailwind CSS using Cloud Firestore and Storage
+  Twitter like app built in Next.js + TypeScript + Tailwind CSS using Cloud Firestore and Storage
 </p>
 
 ## Preview 🎬
-
-https://user-images.githubusercontent.com/55032197/201472767-9db0177a-79b5-4913-8666-1744102b0ad7.mp4
+<!-- Future area for video description of project -->
 
 ## Features ✨
 
@@ -45,8 +44,7 @@ Here are the steps to run the project locally.
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/ccrsxx/twitter-clone.git
-   ```
+   git@github.com:FelipeJuarezJr/nextjs-ts-ReptiGram-full.git   ```
 
 1. Install dependencies
 
@@ -117,8 +115,3 @@ Here are the steps to run the project locally.
          ```
 
 > **_Note_**: When you deploy Firestore indexes rules, it might take a few minutes to complete. So before the indexes are enabled, you will get an error when you fetch the data from Firestore.<br><br>You can check the status of your Firestore indexes with the link below, replace `your-project-id` with your project ID: https://console.firebase.google.com/u/0/project/your-project-id/firestore/indexes
-
-Optional:
-
-- If you want to get trending data from Twitter API, you need to create a Twitter developer account and get your API keys. Then add your API keys to `.env.development`. I hope Elon Musk doesn't make this API paid 😅.
-- If you want to make the user stats synced with the deleted tweets, you need to enable the Cloud Functions for Firebase. Then deploy the Cloud Functions.
