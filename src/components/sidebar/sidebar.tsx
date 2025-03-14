@@ -10,6 +10,7 @@ import { SidebarLink } from './sidebar-link';
 import { MoreSettings } from './more-settings';
 import { SidebarProfile } from './sidebar-profile';
 import type { IconName } from '@components/ui/hero-icon';
+import { NextImage } from '@components/ui/next-image';
 
 export type NavLink = {
   href: string;
@@ -94,7 +95,13 @@ export function Sidebar(): JSX.Element {
                            focus-visible:bg-accent-blue/10 focus-visible:!ring-accent-blue/80
                            dark:text-twitter-icon dark:hover:bg-dark-primary/10'
               >
-                <CustomIcon className='h-7 w-7' iconName='TwitterIcon' />
+                {/* <CustomIcon className='h-7 w-7' iconName='GoogleIcon' /> */}
+                <NextImage
+                  src='/assets/twitter-avatar.jpg'
+                  alt='ReptiGram Image'
+                  width={45}
+                  height={45}
+                />
               </a>
             </Link>
           </h1>
