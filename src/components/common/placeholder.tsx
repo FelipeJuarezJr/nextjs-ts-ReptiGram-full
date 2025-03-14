@@ -1,5 +1,6 @@
-import { CustomIcon } from '@components/ui/custom-icon';
+// import { CustomIcon } from '@components/ui/custom-icon';
 import { SEO } from './seo';
+import { NextImage } from '@components/ui/next-image';
 
 export function Placeholder(): JSX.Element {
   return (
@@ -10,10 +11,18 @@ export function Placeholder(): JSX.Element {
         image='/home.png'
       />
       <i>
-        <CustomIcon
+        {/* <CustomIcon
           className='h-20 w-20 text-[#1DA1F2]'
-          iconName='TwitterIcon'
-        />
+          iconName='GoogleIcon'
+        /> */}
+                      <NextImage
+                src='/assets/twitter-avatar.jpg'
+                alt='ReptiGram Image'
+                width={150}
+                height={150}
+                className='-mt-4 h-6 w-6 text-accent-blue dark:'
+                priority
+              />
       </i>
     </main>
   );
